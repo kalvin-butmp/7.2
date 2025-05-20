@@ -1,0 +1,242 @@
+body {
+  background-color: #f4f4f4;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Bandeau */
+header {
+  background-color: #005baa;
+  color: white;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.header-logos {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 60px; /* encore plus d'espace entre les logos et le titre */
+  padding: 0 20px;
+  max-width: 1300px; /* largeur augmentée pour tout faire rentrer */
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  text-align: center;
+  white-space: nowrap; /* reste absolument sur une seule ligne */
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.logo-mp {
+  height: 100px;
+  width: auto;
+}
+
+.logo-amu {
+  height: 90px;
+  width: auto;
+}
+
+/* Bandeau image */
+.bandeau-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 0;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  position: relative;
+}
+
+h2 {
+  font-size: 30px;
+  color: #005baa;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Vidéo */
+.video-section {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.video-section video {
+  max-width: 800px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #eee;
+  color: #555;
+  padding: 30px 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #005baa;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact {
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+footer .copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Bannière cookies */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cookie-banner p {
+  margin: 0;
+  font-size: 16px;
+  flex: 1;
+}
+
+.cookie-banner button {
+  background-color: #f4b400;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.cookie-banner button:hover {
+  background-color: #c98f00;
+}
+
+/* Réseaux sociaux */
+.social-logos {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-logo {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-logo:hover {
+  transform: scale(1.2);
+}
+
+/* --- Carrousel --- */
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  overflow: visible;
+}
+
+.carousel-container {
+  position: relative;
+  text-align: center;
+}
+
+#carousel-image {
+  max-width: 100%;
+  width: 900px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #005baa;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel-button:hover {
+  background-color: #003f7a;
+}
+
+#prev-button {
+  left: -60px;
+}
+
+#next-button {
+  right: -60px;
+}
+
+/* --- Logo cliquable --- */
+.logo-link-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.centered-logo {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.centered-logo:hover {
+  transform: scale(1.1);
+}
